@@ -91,24 +91,23 @@ nav select:hover {
 }
 
 .container-xxl h2{ 
-    font-size: 3.5em;
+    font-size: 3rem;
     font-weight: bolder;
 }
 
 .container-xxl p{ 
     margin-bottom: 2%;}
 
-.boton{ 
+.boton1{ 
     border: none;
     border-radius: 15px;
     padding: 0.5em 2.2em; 
     background-color: #706DFF;
-    background-color: #706DFF;
-    color: rgb(255, 255, 255);
+    color: white;
     font-size: 1.2em;
 
   }
-.boton:hover{
+.boton1:hover{
     background-color: #75E992;
     box-shadow: inset rgba(12, 82, 72, 0.322) 0px 2px 3px 0px ;
     border-bottom: #75E992 solid 2px;
@@ -118,27 +117,95 @@ nav select:hover {
 
 /* TEST ENEGRAMA */
 
-.bg1{
+.h-item{
+    height: 45vw;
+}
+
+.carousel-item{
+    background-color: #75E992;
+}
+.carousel-item h2{
+    font-size: 3em;
+    font-weight: bolder;
+    text-shadow: rgba(0, 0, 0, 0.329) 0.2px 0.2px 5px;
+}
+
+.carousel-item p{
+    font-size: 1.1em;
+}
+
+.carousel-caption{
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5%;
+    background-color: #6f6dff5b;
+    padding: 2%;
+    border-radius: 25px;
+
+}
+
+h3{
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+
+
+.infotest{
     background-color: black;
     color: white;
-}
-
-.bg1 ul{
-    text-align: center;
-}
-
-.bg1 ul li{
-    border: none;
-    border-radius: 15px;
-    margin: 1em;
-    padding: 0.5em 0.5em;
-    background-color:  #75E992;
-    color: rgb(255, 255, 255);
-    font-size: 1em;
 }
 
 
 
 img{
     width: 100%;
+}
+
+.card{
+    background-color: #706DFF;
+}
+
+.card:hover{
+    transform: scale(1.02);
+    background-color: #8785ff;
+    box-shadow: inset rgba(6, 6, 46, 0.322) 0px 2px 3px 0px ;
+    transition: all ease-in-out 300ms;
+    
+}
+.card h4{
+    color: white;
+}
+.card p{
+    text-align: center;
+    color: white;
+}
+
+.boton2{
+    border: solid white 2px;
+    border-radius: 15px;
+    padding: 0.5em 2.2em; 
+    color: white;
+    font-size: 1.2em;
+}
+
+.boton2:hover{
+
+    border: solid  #706DFF 2px;
+    color: #e7e7ff;
+    background-color: #6f6dffb0;
+    box-shadow: inset rgba(12, 82, 72, 0.322) 0px 2px 3px 0px ;
+    transition: ease-in-out 300ms;
+    
+}
+
+
+.opciones_color{
+    background-color: #75E992;
+    padding: 1.1%;
+}
+
+.form-check-input{
+    transform: scale(2);
 }
