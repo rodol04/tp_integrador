@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Be Vietnam Pro", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+	--transition: 0.25s;
+}
+
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e2e2ff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #ff9655, #e66d22);
+  border-radius: 10px;
+
+}
+
+main {
+    overflow-x: hidden;
+    z-index: 60;
+    position: relative;
+    margin-bottom: 350px; 
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  z-index: 70; /* si realmente lo necesitás */
+  position: relative;
+}
+
+
+header img {
+  background: white;
+  width: 23%;
+  margin-left: 5%;
+  padding: 6%;
+}
+
+nav {
+  display: flex;
+  gap: 1vw;
+  background: rgba(0, 0, 0, 0.795);
+  border-radius: 20px;
+  padding: 2.7rem;
+}
+
+nav select {
+    padding: 0.2rem 1rem; 
+    border: transparent;
+    border-radius: 30px;
+    background: rgb(0, 0, 0);
+    font-family: inherit;
+    color: #ffffff;
+    font-size: 1.1vw;
+    transition: all 0.5s ease; 
+    display: inline-block;
+    font-weight: 500;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.1vw;
+    padding: 0.2rem 1rem; 
+    border-radius: 30px; 
+    transition: all 0.5s ease; 
+    display: inline-block;
+    font-weight: 500;
+}
+
+nav a:hover {
+    background-color: #D4621C;
+    transform: scale(1.05);
+}
+
+nav select:hover {
+    background-color: #D4621C;
+    transform: scale(1.05);
+    border-radius: 30px;
+}
+
+.HOME {
+    font-family: "Be Vietnam Pro", sans-serif;
+    text-align: center;
+    color: #ffffff;
+    background-color: rgb(0, 0, 0);
+    padding-bottom: 10vh;
+    width: 100%;
+}
+
+.HOME a {
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.frase{
+    padding-left: 30vw;
+    padding-top: 7vh;
+    width: 40%;
+    padding-bottom: 10vh;
+}
+
+.frase h1 {
+    font-size: 4.5vw;
+    font-weight: 800;
+    margin-bottom: 2vh;
+}
+
+.frase p {
+    text-align: justify;
+    font-weight: 400;
+    font-size: 1vw;
+    line-height: 1.6;
+}
+
+.bloques {
+  display: flex;
+  justify-content: center;
+  gap: 1vw;
+  padding: 5vh 0vw;
+  width: 100%;
+  align-items: center;
+}
+
+.bloque-alfa, .bloque-beta, .bloque-gamma, .bloque-delta{
+  text-decoration: none;
+  color: white;
+  padding: 12vh 1.7vw;
+  width: 10%;
+  border-radius: 15px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 800;
+  font-size: 2vw;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+.bloque-alfa {
+    background-color: #706DFF;
+}
+
+.bloque-beta {
+    background-color: #5C5ACC;
+}
+
+.bloque-gamma {
+    background-color: #8685E8;
+}
+
+.bloque-delta {
+    background-color: #C0B4FF;
+}
+
+.bloque-alfa:hover {
+    background-color: #75E992;
+    transform: scale(1.05);
+}
+
+.bloque-beta:hover {
+  background-color: #75E992;
+  transform: scale(1.05);
+}
+
+.bloque-gamma:hover {
+  background-color: #75E992;
+  transform: scale(1.05);
+}
+
+.bloque-delta:hover {
+  background-color: #75E992;
+  transform: scale(1.05);
+}
+
+.info {
+    background-color: black;
+    padding-left: 22vw;
+    font-family: "Be Vietnam Pro", sans-serif;
+    color: white;
+    width: 100%;
+    padding-bottom: 10vh;
+}
+
+.bloques-info {
+    width: 55%;
+}
+
+.bloques-info h2{
+    font-weight: 800;
+    font-size: 2vw;
+    margin-bottom: 2vh;
+}
+
+.bloques-info p{
+    font-weight: 400;
+    font-size: 1vw;
+    padding-bottom: 5vh;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.content_inner {
+  width: 90%;
+  margin: 40px 40px 420px 40px;
+  padding: 100px;
+}
+
+.fixed_footer {
+  width: 100%;
+  height: 350px;
+  background: #ffffff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+.idk {
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+  font-family: "Be Vietnam Pro", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 0.1px;
+  line-height: 30px;
+}
+
+.col li:first-child {
+  font-weight: bolder;
+}

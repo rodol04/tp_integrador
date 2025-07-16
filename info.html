@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-info.css">
+</head>
+<body>
+
+    <div class="menu">
+        <header>
+          <a href="index.html"><img src="img/LOGO_ORIGINAL.png"  alt=""></a>
+        </header>
+        
+        <nav>
+          <a href="busqueda_test.html">Test</a>
+          <a href="info.html">Informacion</a>
+          <a href="personas.html">Personas</a>
+          <a href="color_paleta.html">color</a>
+
+          <select id="cambio-idioma">
+            <option value="es">Español</option>
+            <option value="en">Ingles</option>
+          </select>
+          <span></span>
+        </nav>
+    </div>
+    <main>
+      
+      <div class="HOME">
+        <div class="frase">
+          <h1>SOCIONICA</h1>
+          <p>El modelo del metabolismo de la información es la base teórica sobre la cual se construyo la socionica. 
+            Este modelo plantea que el ser humano intercambia energía e información con su entorno, y Aušra Augustinavičiūtė consideró que este proceso es clave para la vida psicológica. 
+            Así, ella creó la sociónica; un sistema de analisis que se enfoca en cómo cada persona recibe, interpreta y responde a distintos tipos de datos como hechos, emociones, ideas y sensaciones.</p>
+        </div>
+
+        <div class="bloques">
+          <a href="alfa.html" class="bloque-alfa">ALFA BLOQUE</a>
+          <a href="beta.html" class="bloque-beta">BETA BLOQUE</a>
+          <a href="gamma.html" class="bloque-gamma">GAMMA BLOQUE</a>
+          <a href="delta.html" class="bloque-delta">DELTA BLOQUE</a>
+        </div>
+
+      </div>
+
+      <section class="info">
+
+        <div class="bloques-info">
+          <h2>ALFA</h2>
+          <p>El bloque Alfa valora la libertad intelectual, el humor, la apertura al diálogo y un ambiente relajado, sin necesidad de estructuras rígidas ni jerarquías dominantes. 
+          Sus miembros tienden a evitar el conflicto directo y priorizan la comprensión mutua, la curiosidad y la creación de nuevas ideas.
+          </p>
+        </div>
+
+        <div class="bloques-info">
+          <h2>BETA</h2>
+          <p>El bloque Beta valora la acción colectiva, el drama emocional, la lealtad grupal y la visión compartida del futuro. 
+            Tiende a organizarse en torno a causas o misiones comunes, con roles más definidos y jerarquías más marcadas. 
+            Los integrantes de este bloque se sienten cómodos en entornos intensos y con una fuerte carga emocional.
+          </p>
+        </div>
+
+        <div class="bloques-info">
+          <h2>GAMMA</h2>
+          <p>El bloque Gamma está centrado en la eficiencia, el realismo, la autonomía personal y el cambio práctico. Valoran los resultados tangibles, 
+            la experiencia concreta y el aprendizaje a través de las consecuencias. Son personas que enfrentan la realidad con pragmatismo y buscan transformar lo que no funciona.
+          </p>
+        </div>
+
+        <div class="bloques-info">
+          <h2>DELTA</h2>
+          <p>El bloque Delta valora la autenticidad, el crecimiento personal, el respeto mutuo y el bienestar a largo plazo. 
+            Son idealistas prácticos que buscan construir relaciones estables y sostenibles, desarrollarse individualmente y ayudar a los demás a hacer lo mismo, pero sin forzar.
+          </p>
+        </div>
+
+      </section>
+
+    </main>
+
+<footer class="fixed_footer">
+  <div class="content_inner">
+    <div class="idk">
+
+
+       <div class="col-6">
+              <li><a href="busqueda_test.html">Test</a></li>
+              <li><a href="info.html">Informacion</a></li>
+              <li><a href="personas.html">Personas</a></li>
+              <li><a href="color_paleta.html">Color</a></li>
+            </div>
+
+
+            <div class="col-6 ">
+              <li>¡Unite a nuestra comunidad!</li>
+              <div class="col-12 unite">
+                <div class="col-2"><img src="img/dc.png" alt=""></div>
+              <div class="col-2"><img src="img/reddit.png" alt=""></div>
+              </div>
+        </div>
+
+
+     </div>
+   </div>
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+
+<script>
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".fixed_footer", {
+  y: 0,
+  opacity: 1,
+  duration: 1.5,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".info",
+    start: "bottom bottom", // cuando termina .info
+    toggleActions: "play none none none",
+  }
+});
+
+
+
+
+</script>
+    
+</body>
+</html>

@@ -7,33 +7,145 @@
     <link rel="stylesheet" href="style.css">
     <title>HOME TIPOGRAMA</title>
 </head>
+
 <body>
-<div class="menu">
-    <header>
-      <img src="img/LOGO ORIGINAL.png" alt="">
-    </header>
+
+
+        <div class="menu">
+        <header>
+          <a href="index.html"><img src="img/LOGO_ORIGINAL.png"  alt=""></a>
+        </header>
+        
+        <nav>
+          <a href="busqueda_test.html">Test</a>
+          <a href="info.html">Informacion</a>
+          <a href="personas.html">Personas</a>
+          <a href="color_paleta.html">color</a>
+
+          <select id="cambio-idioma">
+            <option value="es">Español</option>
+            <option value="en">Ingles</option>
+          </select>
+          <span></span>
+        </nav>
+    </div>
+
+    <main>
+      
+      <div class="HOME">
+        <div class="frase">
+          <p class="finalmente">“FINALMENTE</p>
+          <p class="alguien">ALGUIEN</p>
+          <p class="me">ME</p>
+          <p class="entiende">ENTIENDE”</p>
+        </div>
+
+          <div class="frase2"> 
+            <p>El mejor test tipológico para descubrir cómo sos y cómo procesas</p>
+          </div>
+
+          <a href="busqueda_test.html" class="realizar-test1">Realizar test</a>
+          
+      </div>
+      
+      <section class="slider-acordeon">
+        <div class="panel"><img src="img/img1.jpg" alt=""></div>
+        <div class="panel"><img src="img/img2.jpg" alt=""></div>
+        <div class="panel"><img src="img/img3.jpg" alt=""></div>
+        <div class="panel"><img src="img/img4.jpg" alt=""></div>
+      </section>
+
+      <section class="background">
+        <div class="tipologia">
+          <h2>TIPOLOGíA</h2>
+          <p>La tipología de la personalidad es una clasificación psicológica de los individuos, 
+            que revelan y aumentan el conocimiento y la comprensión de los mismos. Tiene raíces en tradiciones espirituales y psicológicas.</p>
+        </div>
+
+        <div class="eneagrama">
+          <img src="imagenes/persona1.png" alt="">
+          
+          <div class="enea-texto">
+           <h2>ENEAGRAMA</h2>
+           <p>
+             El eneagrama es un sistema de personalidad basado en nueve tipos distintos, 
+             cada uno con sus motivaciones centrales, miedos básicos y estrategias para lidiar con el mundo. 
+             Cada persona se identifica con uno de estos tipos, pero puede compartir rasgos con los cercanos en el círculo (llamados alas).
+           </p>
+          </div>
+        </div>
+
+        <div class="socionica">
+          
+          <div class="socio-texto">
+           <h2>SOCIONICA</h2>
+           <p>
+             La socionica es una teoría de personalidad basada en el trabajo de Carl Jung (funciones cognitivas) y extendida con su propio sistema de 16 tipos, 
+             definidos por cómo los individuos procesan la información (usando funciones como lógica, ética, intuición, sensación, etc.) y cómo interactúan con los demás.
+           </p>
+          </div>
+
+          <img src="imagenes/persona2.png" alt="">
+        </div>
+
+
+      </section>
+
     
-    <nav>
-      <a href="busqueda_test.html">Test</a>
-      <a href="#">Informacion</a>
-      <a href="#">Personas</a>
-      <a href="#">color</a>
 
-      <select id="cambio-idioma">
-        <option value="es">Español</option>
-        <option value="en">Ingles</option>
-      </select>
-      <span></span>
-    </nav>
-  </div>
+    </main>
+
+<footer class="fixed_footer">
+  <div class="content_inner">
+    <div class="idk">
 
 
+       <div class="col-6">
+              <li><a href="busqueda_test.html">Test</a></li>
+              <li><a href="info.html">Informacion</a></li>
+              <li><a href="personas.html">Personas</a></li>
+              <li><a href="color_paleta.html">Color</a></li>
+            </div>
+
+
+            <div class="col-6 ">
+              <li>¡Unite a nuestra comunidad!</li>
+              <div class="col-12 unite">
+                <div class="col-2"><img src="img/dc.png" alt=""></div>
+              <div class="col-2"><img src="img/reddit.png" alt=""></div>
+              </div>
+        </div>
+
+
+     </div>
+   </div>
+</footer>
 
 
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+
+<script>
+    gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".fixed_footer", {
+  y: 350,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".content",
+    start: "bottom bottom",
+    end: "+=200", 
+    scrub: true
+  }
+});
+
+</script>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
 
 </body>
 </html>    
