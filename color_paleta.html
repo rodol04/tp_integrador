@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>PALETA DE COLOR</title>
+</head>
+<body>
+
+
+    <section class="container-fluid bg11">
+         <h2>Descubre tu Paleta de Color</h2>
+         <p>Si combinás tu tipo de Eneagrama y Socionics, te mostramos una paleta aleatoria que podría reflejar tu estilo personal.
+  </p>
+    </section>
+
+  <section class="container-fluid seleccion">
+    <div class="col-12">
+        <h3>Selecciona, ingresa y descubre.</h3>
+    </div>
+
+    <!-- Eneagrama -->
+    <div class="col-6 bg15">
+
+        <div><h4>Eneagrama</h4></div>
+      <div class="button-grid col-12" id="eneagrama-buttons">
+        <button class="col-3" data-value="1">1</button>
+        <button class="col-3" data-value="2">2</button>
+        <button class="col-3" data-value="3">3</button>
+        <button class="col-3" data-value="4">4</button>
+        <button class="col-3" data-value="5">5</button>
+        <button class="col-3" data-value="6">6</button>
+        <button class="col-3" data-value="7">7</button>
+        <button class="col-3" data-value="8">8</button>
+        <button class="col-3" data-value="9">9</button>
+      </div>
+    </div>
+
+    <!-- Socionics -->
+    <div class="col-6 bg15">
+      <div><h4>Socionica</h4></div>
+      <div class="button-grid col-12 " id="socionica-buttons">
+        <button class="col-3" data-value="ENTJ">ENTJ</button>
+        <button class="col-3" data-value="INTJ">INTJ</button>
+        <button class="col-3" data-value="INFJ">INFJ</button>
+        <button class="col-3" data-value="ENFJ">ENFJ</button>
+        <button class="col-3" data-value="ENTP">ENTP</button>
+        <button class="col-3" data-value="INTP">INTP</button>
+        <button class="col-3" data-value="INFP">INFP</button>
+        <button class="col-3" data-value="ENFP">ENFP</button>
+        <button class="col-3" data-value="ESTJ">ESTJ</button>
+        <button class="col-3" data-value="ISTJ">ISTJ</button>
+        <button class="col-3" data-value="ISFJ">ISFJ</button>
+        <button class="col-3" data-value="ESFJ">ESFJ</button>
+        <button class="col-3" data-value="ESTP">ESTP</button>
+        <button class="col-3" data-value="ISTP">ISTP</button>
+        <button class="col-3" data-value="ISFP">ISFP</button>
+        <button class="col-3" data-value="ESFP">ESFP</button>
+      </div>
+    </div>
+
+    <button id="crear_boton">Crear</button>
+  </section>
+
+  <div id="result"></div>
+
+  
+<script src="paleta_color.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
